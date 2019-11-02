@@ -1,0 +1,19 @@
+import time
+import webbrowser
+
+pants = {'color': 'Olive', 'Length': '32 long', 'Waist': '32 at the waist'}
+print("My new favorite pair of pants is" + " "+ pants['color'])
+time.sleep(1)
+print("My new favorite pair of pants is" + " "+ pants['Length'])
+time.sleep(1)
+print("My new favorite pair of pants is" + " "+ pants['Waist'])
+time.sleep(1)
+
+operation = input("Would you like me to show you?")
+if operation == 'no':
+    print("Okay, I guess you are no fun")
+elif operation == 'yes':
+    webbrowser.open("https://bonobos.com/products/5-pocke"
+                    "t-cords?color=olive&pant-waist=32&pant-fit=tailored&pant-length=32")
+else:
+    print("Fuck yo couch")
